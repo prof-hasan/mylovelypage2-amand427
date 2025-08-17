@@ -1,0 +1,94 @@
+h1 {
+    font-size: 100px;
+    font-family: "League Gothic", sans-serif;
+    text-shadow: 2px 2px 1px black;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    margin: 0 0 0 5px ;
+}
+.dentro h2 {
+    font-size: 75px;
+    font-family: "League Gothic", sans-serif;
+    text-shadow: 2px 2px 1px black;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    margin: 0 0 0 5px;
+}
+
+#banner {
+    width: 100%;
+}
+
+body {
+    background-color: #ffdd6f;
+    margin: 0 0 0 0;
+    min-width: 370px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.fora {
+    position: relative;
+    height: 207.867px;
+}
+.dentro {
+    position: absolute;
+    top: 0;
+}
+
+#balde {
+    position: absolute;
+    width: 350px;
+    right: 20px; 
+    top: 20px; 
+}
+
+#nav {
+    display: flex;
+    padding: 0 370px 0 50px;
+    background-color: #3f3628;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+#nav a {
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-size: 20px;
+}
+
+#nav a:hover {
+    text-decoration: none;
+    color: #ffdd6f;
+}
+#nav a:active {
+    color: yellow;
+}
+#nav a:visited {
+    color: antiquewhite
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #3f3628;
+    font-family: "League Gothic", sans-serif;
+    margin-right: 350px;
+}
+
+#main p {
+    padding: 20px 20px 20px 20px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 23, 23);
+}
+
+span {
+    font-size: 20px;
+    font-style: italic;
+}
