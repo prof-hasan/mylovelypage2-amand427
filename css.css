@@ -1,99 +1,66 @@
-h1 {
-    font-size: 6.5rem;
-    font-family: "League Gothic", sans-serif;
-    text-shadow: 0.5vh 0.5vh 0.25vh black;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-    margin: 0 0 0 5px ;
-}
-.dentro h2 {
-    font-size: 4rem;
-    font-family: "League Gothic", sans-serif;
-    text-shadow: 0.5vh 0.5vh 0.25vh black;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-    margin: 0 0 0 1%;
-}
-
-#banner {
-    grid-row-start: 1;
-    width: 100%;
-}
-
-body, html {
+html, body {
     background-color: rgb(206, 180, 126);
 }
 
 body {
-    margin: 0;
     display: grid;
-    grid-template-rows: 47vh 6vh auto 47vh;
-    overflow: auto;
-    box-sizing: border-box;
+    grid-template-rows: auto auto 1fr auto;
+    margin: 0;
 }
 
-.fora {
+header {
+    grid-row-start: 1;
     position: relative;
+    margin: 0;
+    background-image: url(imgs/TSPUD_ReleaseDate_Screenshot_02.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    font-size: 2.5rem;
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    text-shadow: 0.5vh 0.5vh 0.25vh black;
 }
-.dentro {
-    position: absolute;
-    top: 0;
+
+header > h1 {
+    margin: 1%;
+}
+
+header > h2 {
+    margin: 1%;
+}
+
+nav {
+    grid-row-start: 2;
+    display: flex;
+    align-content: space-around;
+
+    background-color: #3f3628;
+}
+nav a {
+    margin: 0.3% 6%;
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: rgba(245, 241, 46, 0.89);
+    text-decoration: underline;
+}
+
+::selection{
+    background-color: rgba(245, 241, 46, 0.89);
+}
+
+main {
+    grid-row-start: 3;
 }
 
 #balde {
+    width: 30%;
     position: absolute;
-    width: 27%;
-    right: 3%; 
-    top: 3%; 
-}
-
-#nav {
-    grid-row-start: 2;
-    display: flex;
-    padding: 0 370px 0 50px;
-    background-color: #3f3628;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-}
-
-#nav a {
-    color: white;
-    font-family: "League Gothic", sans-serif;
-    font-size: 20px;
-}
-
-#nav a:hover {
-    text-decoration: none;
-    color: #ffdd6f;
-}
-#nav a:active {
-    color: yellow;
-}
-#nav a:visited {
-    color: antiquewhite
-}
-
-h3 {
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 30px;
-    font-weight: normal;
-    color: #3f3628;
-    font-family: "League Gothic", sans-serif;
-}
-
-#main p {
-    margin: 20px 20px 20px 20px;
-    word-wrap: break-word;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 23, 23);
-}
-
-span {
-    font-size: 20px;
+    top: 10%;
+    right: 3%;
 }
 
 .texto {
@@ -102,29 +69,6 @@ span {
     margin: 3% 4% 3% 4%;
 }
 
-#footer {
+footer {
     grid-row-start: 4;
-    background-color: #3f3628;
-    text-align: left;
-    color: white;
-    margin-top: 3%;
-}
-
-iframe {
-    width: 50%;
-    height: 50%;
-}
-
-@media (max-width: 600px) {
-    .dentro h2 {
-        font-size: 2rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    p, h3 {
-        font-size: 0.7rem;
-    }
 }
