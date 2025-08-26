@@ -35,6 +35,9 @@ nav {
     display: flex;
     align-content: space-around;
 
+    position: sticky;
+    top: 0;
+
     background-color: #3f3628;
 }
 nav a {
@@ -57,18 +60,29 @@ main {
 }
 
 #balde {
-    width: 30%;
+    width: 25%;
     position: absolute;
-    top: 10%;
+    top: 3%;
     right: 3%;
 }
 
 .texto {
     background-color: rgba(250, 235, 215, 0.89);
     border: 0.27rem outset #6b5840;
-    margin: 3% 4% 3% 4%;
+    padding: 3% 2%;
+    margin: 2% 5%;
+}
+main h3 {
+    text-align: center;
 }
 
 footer {
     grid-row-start: 4;
+    background-color: #3f3628;
+
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2rem;
+
+    padding: 1%;
 }
