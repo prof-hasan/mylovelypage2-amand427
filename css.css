@@ -74,6 +74,17 @@ main {
 }
 main h3 {
     text-align: center;
+    font-family: "League Gothic", sans-serif;
+    color: #3f3628;
+    font-size: 1.7rem;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60rem;
+    height: 35rem;
 }
 
 footer {
