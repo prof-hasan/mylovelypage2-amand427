@@ -13,7 +13,7 @@ header {
     position: relative;
     margin: 0;
     background-image: url(imgs/TSPUD_ReleaseDate_Screenshot_02.png);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
     font-size: 2.5rem;
@@ -59,11 +59,59 @@ main {
     grid-row-start: 3;
 }
 
+p, dd {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#monitores, #gifstanley {
+    border: 0.27rem outset #6b5840;
+    display: block;
+    width: 50%;
+    margin: 0 auto 2% auto;
+}
+
+#especifico {
+    width: 25%;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
 #balde {
     width: 25%;
     position: absolute;
     top: 3%;
     right: 3%;
+    transition: ease-in-out 0.5s;
+}
+#balde:hover {
+    top: 2.3%;
+    right: 2%;
+    transform: rotate(10deg);
+}
+
+.figurinha {
+    position: absolute;
+    opacity: 0;
+    width: 10%;
+    transition: ease-in-out 0.5s;
+}
+.figurinha:hover {
+    opacity: 1;
+    width: 13%;
+}
+
+.introducao {
+    bottom: 20%;
+    left: 2%;
+}
+.historia {
+    width: 5%;
+    top: 15%;
+    right: 5%;
+    scale: -1 1;
 }
 
 .texto {
@@ -87,7 +135,18 @@ main h3 {
     height: 35rem;
 }
 
+#emoji {
+    width: 10%;
+}
+
+ul a {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
 footer {
+    position: relative;
     grid-row-start: 4;
     background-color: #3f3628;
 
@@ -96,4 +155,43 @@ footer {
     font-size: 2rem;
 
     padding: 1%;
+}
+
+footer a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 2% 4% 2% 1%;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+#logotipo {
+    float: left;
+    margin-right: 3%;
+}
+
+.finais {
+    top: 10%;
+    right: 10%;
+    scale: -1 1;
+}
+
+.spoiler::before {
+    content: "ALERTA DE SPOILER!";
+    background-color: rgba(165, 42, 42, 0.568);
+    border-radius: 10%;
+    margin: 2% 2% 2% 0;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.5rem;
+}
+
+.spoiler {
+    opacity: 0.5;
+}
+
+.spoiler:hover {
+    opacity: 1;
 }
