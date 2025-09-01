@@ -63,11 +63,26 @@ p, dd {
     font-family: 'Montserrat', sans-serif;
 }
 
+.codigo {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: ease-in-out 0.5s;
+}
+
+#gifstanley:hover ,#monitores:hover, .codigo:hover {
+    width: 60%;
+}
+
 #monitores, #gifstanley {
     border: 0.27rem outset #6b5840;
     display: block;
     width: 50%;
     margin: 0 auto 2% auto;
+
+    transition: ease-in-out 0.5s;
 }
 
 #especifico {
@@ -82,20 +97,20 @@ p, dd {
 #balde {
     width: 25%;
     position: absolute;
-    top: 3%;
-    right: 3%;
+    top: 3vh;
+    right: 3vw;
     transition: ease-in-out 0.5s;
 }
 #balde:hover {
     top: 2.3%;
-    right: 2%;
+    right: 2vw;
     transform: rotate(10deg);
 }
 
 .figurinha {
     position: absolute;
     opacity: 0;
-    width: 10%;
+    width: 1vh;
     transition: ease-in-out 0.5s;
 }
 .figurinha:hover {
@@ -131,18 +146,27 @@ main h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60rem;
-    height: 35rem;
+    width: 71vw;
+    height: 80vh;
 }
 
 #emoji {
     width: 10%;
 }
 
-ul a {
-    color: black;
+.discreto {
+    color: #3f3628;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
+}
+.discreto:hover {
+    text-decoration: underline;
+}
+
+#mcqueen {
+    width: 3%;
+    margin-left: 90%; 
+    opacity: 0.2;  
 }
 
 footer {
