@@ -1,0 +1,275 @@
+html, body {
+    background-color: rgb(206, 180, 126);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    margin: 0;
+}
+
+header {
+    grid-row-start: 1;
+    position: relative;
+    margin: 0;
+    background-image: url(imgs/TSPUD_ReleaseDate_Screenshot_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    font-size: 2.5rem;
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    text-shadow: 0.5vh 0.5vh 0.25vh black;
+}
+
+header > h1 {
+    margin: 1%;
+}
+
+header > h2 {
+    margin: 1%;
+}
+
+nav {
+    grid-row-start: 2;
+    display: flex;
+    align-content: space-around;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #3f3628;
+}
+nav a {
+    margin: 0.5% 5%;
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: rgba(245, 241, 46, 0.89);
+    text-decoration: underline;
+}
+
+::selection{
+    background-color: rgba(245, 241, 46, 0.89);
+}
+
+main {
+    grid-row-start: 3;
+}
+
+p, dd {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.codigo {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: ease-in-out 0.5s;
+}
+
+#gifstanley:hover ,#monitores:hover, .codigo:hover {
+    width: 60%;
+}
+
+#monitores, #gifstanley {
+    border: 0.27rem outset #6b5840;
+    display: block;
+    width: 50%;
+    margin: 0 auto 2% auto;
+
+    transition: ease-in-out 0.5s;
+}
+
+#especifico {
+    width: 25%;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#balde {
+    width: 25%;
+    position: absolute;
+    top: 3vh;
+    right: 3vw;
+    transition: ease-in-out 0.5s;
+}
+#balde:hover {
+    top: 2.3%;
+    right: 2vw;
+    transform: rotate(10deg);
+}
+
+.figurinha {
+    position: absolute;
+    opacity: 0;
+    width: 4vh;
+    transition: ease-in-out 0.5s;
+}
+.figurinha:hover {
+    opacity: 1;
+    width: 8vh;
+}
+
+.introducao {
+    bottom: 20vh;
+    left: 5vw;
+}
+.historia {
+    width: 5%;
+    top: 15%;
+    right: 5%;
+    scale: -1 1;
+}
+
+.texto {
+    background-color: rgba(250, 235, 215, 0.89);
+    border: 0.27rem outset #6b5840;
+    padding: 3% 2%;
+    margin: 2% 5%;
+}
+main h3 {
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    color: #3f3628;
+    font-size: 1.7rem;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 71vw;
+    height: 80vh;
+}
+
+#emoji {
+    width: 10%;
+}
+
+.discreto {
+    color: #3f3628;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+.discreto:hover {
+    text-decoration: underline;
+}
+
+#mcqueen {
+    width: 3%;
+    margin-left: 90%; 
+    opacity: 0.2;  
+}
+
+footer {
+    position: relative;
+    grid-row-start: 4;
+    background-color: #3f3628;
+
+    color: white;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2rem;
+
+    padding: 1%;
+}
+
+footer a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 2% 4% 2% 1%;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+#logotipo {
+    float: left;
+    margin-right: 3%;
+}
+
+.finais {
+    top: 10%;
+    right: 10%;
+    width: 100%;
+}
+
+.spoiler::before {
+    content: "ALERTA DE SPOILER!";
+    background-color: rgba(165, 42, 42, 0.568);
+    border-radius: 10%;
+    margin: 2% 2% 2% 0;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.5rem;
+}
+
+.spoiler {
+    opacity: 0.5;
+}
+
+.spoiler:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 760px) {
+    #balde {
+        top: 10.5vh;
+        right: 0.1vw;
+        width: 28%;
+        z-index: 2;
+    }
+    #balde:hover {
+        top: 9vh;
+        right: 0.01vw;
+        transform: rotate(10deg);
+    }
+
+    nav a {
+        margin-left: 1%;      
+    }
+
+    h1, h2 {
+        z-index: 1;
+    }
+
+    .figurinha {
+        width: 5vh;
+    }
+    .figurinha:hover {
+        opacity: 1;
+        width: 10vh;
+    }
+    
+    .introducao {
+        bottom: 20vh;
+        left: 5vw;
+    }
+    .historia {
+        width: 5%;
+        top: 5%;
+        right: 6%;
+        scale: -1 1;
+    }
+
+    #mcqueen {
+        width: 1.5rem;
+    }
+  }
+
+@media (max-width: 300px) {
+    #balde {
+        bottom: 60%;
+        top: auto;
+    }
+}
